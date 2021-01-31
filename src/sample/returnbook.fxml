@@ -3,13 +3,14 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="420.0" prefWidth="467.0" style="-fx-background-color: #F7B706;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane prefHeight="449.0" prefWidth="554.0" style="-fx-background-color: #F7B706;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Button layoutX="375.0" layoutY="332.0" mnemonicParsing="false" text="Return" />
       <Label layoutX="78.0" layoutY="118.0" prefHeight="34.0" prefWidth="104.0" text="Student Id :">
          <font>
             <Font name="Cambria" size="19.0" />
@@ -30,18 +31,27 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="name1" layoutX="188.0" layoutY="80.0" prefHeight="26.0" prefWidth="199.0" />
-      <TextField fx:id="id1" layoutX="188.0" layoutY="122.0" prefHeight="26.0" prefWidth="199.0" />
-      <TextField fx:id="bookid1" layoutX="188.0" layoutY="165.0" prefHeight="26.0" prefWidth="199.0" />
-      <TextField fx:id="idate1" layoutX="188.0" layoutY="215.0" prefHeight="26.0" prefWidth="199.0" />
-      <Line endX="329.9000244140625" endY="7.62939453125E-6" layoutX="90.0" layoutY="39.0" startX="-69.19999694824219" startY="7.62939453125E-6" />
+      <TextField fx:id="name1" layoutX="188.0" layoutY="80.0" prefHeight="26.0" prefWidth="315.0" />
+      <TextField fx:id="id1" layoutX="188.0" layoutY="122.0" prefHeight="26.0" prefWidth="315.0" />
+      <TextField fx:id="bookid1" layoutX="188.0" layoutY="165.0" prefHeight="26.0" prefWidth="315.0" />
+      <TextField fx:id="idate1" layoutX="188.0" layoutY="215.0" prefHeight="26.0" prefWidth="315.0" />
+      <Line endX="431.9000244140625" endY="3.0" layoutX="90.0" layoutY="39.0" startX="-69.19999694824219" startY="7.62939453125E-6" />
       <Line endX="-21.907154083251953" endY="71.89999389648438" layoutX="41.0" layoutY="203.0" startX="-20.700027465820312" startY="-163.5" />
-      <Line endX="318.9000244140625" endY="-7.600006103515625" layoutX="101.0" layoutY="283.0" startX="-81.40715026855469" startY="-8.600006103515625" />
-      <Line endX="290.4000244140625" endY="-42.100006103515625" layoutX="130.0" layoutY="317.0" startX="290.4000244140625" startY="-278.5" />
-      <Button fx:id="rb" layoutX="178.0" layoutY="292.0" mnemonicParsing="false" onAction="#rbclick" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: writer.write(n);           writer.newLine();           writer.write(i);           writer.newLine();;" text="Return book" textFill="#3c0404">
+      <Line endX="420.9000244140625" endY="-3.600006103515625" layoutX="101.0" layoutY="283.0" startX="-81.40715026855469" startY="-8.600006103515625" />
+      <Line endX="290.4000244140625" endY="-42.100006103515625" layoutX="232.0" layoutY="321.0" startX="290.4000244140625" startY="-278.5" />
+      <Button fx:id="rb" layoutX="219.0" layoutY="295.0" mnemonicParsing="false" onAction="#rbclick" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: writer.write(n);           writer.newLine();           writer.write(i);           writer.newLine();;" text="Return book" textFill="#3c0404">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
+      </Button>
+      <Button fx:id="back3" contentDisplay="TOP" layoutX="472.0" layoutY="383.0" mnemonicParsing="false" onAction="#retrunclick3" prefHeight="52.0" prefWidth="61.0" text="Return">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
       </Button>
    </children>
 </AnchorPane>

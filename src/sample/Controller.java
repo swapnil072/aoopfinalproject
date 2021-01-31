@@ -6,17 +6,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
-
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 import java.net.Socket;
 public class Controller {
     @FXML
-  public Button login,returnbook,searchbook,addbooks,issuebook,back,ic,ab,rb;
+  public Button login,returnbook,searchbook,addbooks,issuebook,back,ic,ab,rb,r1,back1,back2,back3;
     @FXML
-    javafx.scene.control.TextField user,pass,name,id,idate,bookid,name1,id1,idate1,bookid1;
+    javafx.scene.control.TextField user,pass,name,id,idate,bookid,name1,id1,idate1,bookid1,searchtf;
+    @FXML
+    TextArea ta;
     BufferedReader reader = null;
     BufferedWriter writer = null;
 
@@ -39,8 +41,6 @@ public class Controller {
        if (username.equals("") || password.equals("")) {
            JOptionPane.showMessageDialog(null, "Please fill up all the blanks");
        }
-
-
        try{
            writer.write("Login\n");
            writer.write(username);
@@ -53,7 +53,7 @@ public class Controller {
            if (msg.equals("Loginsuccessful")){
                Parent root = FXMLLoader.load(getClass().getResource("library.fxml"));
                Stage window = (Stage) login.getScene().getWindow();
-               window.setScene(new Scene(root,600,575));
+               window.setScene(new Scene(root,554,449));
            }
            else
                JOptionPane.showMessageDialog(null, "Incorrect username and password");
@@ -66,13 +66,12 @@ public class Controller {
     public void addbooksClick() throws IOException {
        Parent root = FXMLLoader.load(getClass().getResource("addbooks.fxml"));
        Stage window = (Stage) addbooks.getScene().getWindow();
-       window.setScene(new Scene(root,600,575));
-
+       window.setScene(new Scene(root,554,449));
    }
    @FXML public void issuebookclick() throws IOException {
        Parent root = FXMLLoader.load(getClass().getResource("issuebook.fxml"));
        Stage window = (Stage) issuebook.getScene().getWindow();
-       window.setScene(new Scene(root,600,575));
+       window.setScene(new Scene(root,554,449));
    }
    @FXML
    public void iclick(){
@@ -103,32 +102,101 @@ public class Controller {
     public void returnbookclick() throws IOException {
        Parent root = FXMLLoader.load(getClass().getResource("returnbook.fxml"));
        Stage window = (Stage) returnbook.getScene().getWindow();
-       window.setScene(new Scene(root,600,575));
+       window.setScene(new Scene(root,554,449));
 
    }
    @FXML
     public void searchbookclick() throws IOException {
        Parent root = FXMLLoader.load(getClass().getResource("searchbook.fxml"));
        Stage window = (Stage) searchbook.getScene().getWindow();
-       window.setScene(new Scene(root,600,575));
+       window.setScene(new Scene(root,554,449));
 
    }
    @FXML
     public void retrunclick() throws IOException {
        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-       Stage window = (Stage) login.getScene().getWindow();
-       window.setScene(new Scene(root,600,575));
+       Stage window = (Stage)back.getScene().getWindow();
+       window.setScene(new Scene(root,554,449));
 
     }
 
     @FXML
     public void adbblick(){
 
+
     }
     @FXML
     public void rbclick(){
+        try {
+            String n= name1.getText();
+            String i =id1.getText();
+            String date = idate1.getText();
+            String book = bookid1.getText();
+            writer.write("ReturnBook\n");
+            writer.write(n);
+            writer.newLine();
+            writer.write(i);
+            writer.newLine();
+            writer.write(date);
+            writer.newLine();
+            writer.write(book);
+            writer.newLine();
+            writer.flush();
+            String msg = reader.readLine();
+
+
+        }catch (IOException e){
+
+        }
+    }
+    public void r1click(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("library.fxml"));
+        Stage window = (Stage) r1.getScene().getWindow();
+        window.setScene(new Scene(root,554,449));
 
     }
+    @FXML
+    public void retrunclick1() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("library.fxml"));
+        Stage window = (Stage)back1.getScene().getWindow();
+        window.setScene(new Scene(root,554,449));
 
-   }
+    }
+    @FXML
+    public void retrunclick2() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("library.fxml"));
+        Stage window = (Stage)back2.getScene().getWindow();
+        window.setScene(new Scene(root,554,499));
+    }
+    @FXML
+    public void retrunclick3() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("library.fxml"));
+        Stage window = (Stage)back3.getScene().getWindow();
+        window.setScene(new Scene(root,554,449));
+    }
+
+    public void sclick(ActionEvent actionEvent) throws IOException {
+        Thread t = new Thread(){
+            @Override
+            public void run() {
+                try {
+                    String s =searchtf.getText();
+                    writer.write("search\n");
+                    writer.write(s);
+                    writer.newLine();
+                    String msg = reader.readLine();
+                    ta.setText(msg);
+                    writer.flush();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        t.start();
+    }
+
+    public void addbclick(ActionEvent actionEvent) {
+    }
+}
 

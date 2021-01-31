@@ -5,21 +5,13 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.shape.Polyline?>
 
-<AnchorPane prefHeight="507.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane prefHeight="449.0" prefWidth="544.0" style="-fx-background-color: #071918;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-       <Button fx:id="back" contentDisplay="TOP" layoutX="447.0" layoutY="441.0" mnemonicParsing="false" onAction="#retrunclick" prefHeight="52.0" prefWidth="61.0" text="Return">
-         <graphic>
-            <ImageView fitHeight="23.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/return.png" />
-               </image>
-            </ImageView>
-         </graphic></Button>
-      <Button fx:id="issuebook" contentDisplay="TOP" layoutX="61.0" layoutY="55.0" mnemonicParsing="false" onAction="#issuebookclick" prefHeight="154.0" prefWidth="157.0" text="issue book">
+       <Button fx:id="back" contentDisplay="TOP" layoutX="233.0" layoutY="400.0" mnemonicParsing="false" onAction="#retrunclick" prefHeight="14.0" prefWidth="78.0" text="Logout" />
+      <Button fx:id="issuebook" contentDisplay="TOP" layoutX="60.0" layoutY="29.0" mnemonicParsing="false" onAction="#issuebookclick" prefHeight="154.0" prefWidth="157.0" text="issue book">
          <graphic>
             <ImageView fitHeight="124.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -28,7 +20,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="returnbook" contentDisplay="TOP" layoutX="276.0" layoutY="58.0" mnemonicParsing="false" onAction="#returnbookclick" prefHeight="154.0" prefWidth="150.0" text="Return Book">
+      <Button fx:id="returnbook" contentDisplay="TOP" layoutX="333.0" layoutY="29.0" mnemonicParsing="false" onAction="#returnbookclick" prefHeight="154.0" prefWidth="150.0" text="Return Book">
          <graphic>
             <ImageView fitHeight="118.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -36,7 +28,7 @@
                </image></ImageView>
          </graphic>
       </Button>
-      <Button fx:id="searchbook" contentDisplay="TOP" layoutX="64.0" layoutY="255.0" mnemonicParsing="false" onAction="#searchbookclick" prefHeight="154.0" prefWidth="150.0" text="search">
+      <Button fx:id="searchbook" contentDisplay="TOP" layoutX="64.0" layoutY="229.0" mnemonicParsing="false" onAction="#searchbookclick" prefHeight="154.0" prefWidth="150.0" text="search">
          <graphic>
             <ImageView fitHeight="105.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -45,7 +37,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="addbooks" contentDisplay="TOP" layoutX="281.0" layoutY="255.0" mnemonicParsing="false" onAction="#addbooksClick" prefHeight="154.0" prefWidth="150.0" text="Add Books">
+      <Button fx:id="addbooks" contentDisplay="TOP" layoutX="351.0" layoutY="229.0" mnemonicParsing="false" onAction="#addbooksClick" prefHeight="154.0" prefWidth="150.0" text="Add Books">
          <graphic>
             <ImageView fitHeight="124.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -54,12 +46,10 @@
             </ImageView>
          </graphic>
       </Button>
-      <Polygon fill="DODGERBLUE" layoutX="257.0" layoutY="442.0" points="-42.60002136230469, -32.60003662109375, -185.7999725341797, -16.4000244140625, -192.99998474121094, -32.60003662109375" stroke="BLACK" strokeType="INSIDE" />
-      <Polyline fill="CHARTREUSE" layoutX="255.0" layoutY="60.0" points="171.39996337890625, 152.40000915527344, 21.0, 168.8000030517578, 21.0, 168.8000030517578, 21.0, 152.40000915527344" strokeType="INSIDE" />
-      <Polyline fill="CHARTREUSE" layoutX="231.0" layoutY="252.0" points="-28.600021362304688, -23.199996948242188, -12.400009155273438, -42.59999084472656, -169.99998474121094, -42.59999084472656, -169.99998474121094, -42.59999084472656" strokeType="INSIDE" />
-      <Polyline fill="CHARTREUSE" layoutX="260.0" layoutY="256.0" points="171.39996337890625, 152.40000915527344, 21.0, 168.8000030517578, 21.0, 168.8000030517578, 21.0, 153.39996337890625" strokeType="INSIDE" />
-      <Line endX="103.60002136230469" endY="27.999996185302734" layoutX="115.0" layoutY="27.0" startX="-54.0000114440918" startY="27.999996185302734" />
-      <Line endX="301.4000244140625" endY="20.999996185302734" layoutX="125.0" layoutY="37.0" startX="151.79998779296875" startY="20.999996185302734" />
+      <Polygon fill="DODGERBLUE" layoutX="260.0" layoutY="416.0" points="-42.60002136230469, -32.60003662109375, -185.7999725341797, -16.4000244140625, -196.00001525878906, -32.600006103515625" stroke="BLACK" strokeType="INSIDE" />
+      <Polyline fill="CHARTREUSE" layoutX="246.0" layoutY="44.0" points="237.4000244140625, 139.39999389648438, 87.0, 147.20001220703125, 87.0, 132.79998779296875, 87.0, 132.79998779296875" strokeType="INSIDE" />
+      <Polyline fill="CHARTREUSE" layoutX="230.0" layoutY="222.0" points="-170.00001525878906, -25.20001220703125, -12.399978637695312, -38.600006103515625, -169.99998474121094, -42.59999084472656, -169.99998474121094, -42.59999084472656" strokeType="INSIDE" />
+      <Polyline fill="CHARTREUSE" layoutX="330.0" layoutY="231.0" points="171.39996337890625, 152.40000915527344, 21.0, 168.8000030517578, 21.0, 168.8000030517578, 21.0, 153.39996337890625" strokeType="INSIDE" />
    </children>
    <cursor>
       <Cursor fx:constant="HAND" />
