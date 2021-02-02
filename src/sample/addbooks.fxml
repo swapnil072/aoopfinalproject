@@ -20,19 +20,19 @@
             <Font name="Comic Sans MS" size="17.0" />
          </font>
       </Label>
-      <TextField layoutX="127.0" layoutY="68.0" prefHeight="26.0" prefWidth="362.0" />
+      <TextField fx:id="a1" layoutX="127.0" layoutY="68.0" prefHeight="26.0" prefWidth="362.0" />
       <Label layoutX="30.0" layoutY="116.0" prefHeight="26.0" prefWidth="96.0" text="Book Name:">
          <font>
             <Font name="Comic Sans MS" size="17.0" />
          </font>
       </Label>
-      <TextField layoutX="127.0" layoutY="116.0" prefHeight="26.0" prefWidth="361.0" />
+      <TextField fx:id="a2" layoutX="127.0" layoutY="116.0" prefHeight="26.0" prefWidth="361.0" />
       <Label layoutX="31.0" layoutY="169.0" prefHeight="26.0" prefWidth="96.0" text=" Quantity:">
          <font>
             <Font name="Comic Sans MS" size="17.0" />
          </font>
       </Label>
-      <TextField layoutX="127.0" layoutY="169.0" prefHeight="26.0" prefWidth="362.0" />
+      <TextField fx:id="a3" layoutX="127.0" layoutY="169.0" prefHeight="26.0" prefWidth="362.0" />
       <Line endX="-162.39999389648438" endY="58.19999694824219" layoutX="180.0" layoutY="37.0" startX="-119.9999771118164" startY="-5.707103729248047" />
       <Button fx:id="back2" contentDisplay="TOP" layoutX="467.0" layoutY="365.0" mnemonicParsing="false" onAction="#retrunclick2" prefHeight="52.0" prefWidth="61.0" text="Return">
          <graphic>

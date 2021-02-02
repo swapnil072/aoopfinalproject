@@ -20,7 +20,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="returnbook" contentDisplay="TOP" layoutX="333.0" layoutY="29.0" mnemonicParsing="false" onAction="#returnbookclick" prefHeight="154.0" prefWidth="150.0" text="Return Book">
+      <Button fx:id="returnbook" contentDisplay="TOP" layoutX="351.0" layoutY="29.0" mnemonicParsing="false" onAction="#returnbookclick" prefHeight="154.0" prefWidth="150.0" text="Return Book">
          <graphic>
             <ImageView fitHeight="118.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -28,7 +28,7 @@
                </image></ImageView>
          </graphic>
       </Button>
-      <Button fx:id="searchbook" contentDisplay="TOP" layoutX="64.0" layoutY="229.0" mnemonicParsing="false" onAction="#searchbookclick" prefHeight="154.0" prefWidth="150.0" text="search">
+      <Button fx:id="searchbook" contentDisplay="TOP" layoutX="64.0" layoutY="229.0" mnemonicParsing="false" onAction="#searchbookclick" prefHeight="154.0" prefWidth="150.0" text="Books">
          <graphic>
             <ImageView fitHeight="105.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -47,7 +47,7 @@
          </graphic>
       </Button>
       <Polygon fill="DODGERBLUE" layoutX="260.0" layoutY="416.0" points="-42.60002136230469, -32.60003662109375, -185.7999725341797, -16.4000244140625, -196.00001525878906, -32.600006103515625" stroke="BLACK" strokeType="INSIDE" />
-      <Polyline fill="CHARTREUSE" layoutX="246.0" layoutY="44.0" points="237.4000244140625, 139.39999389648438, 87.0, 147.20001220703125, 87.0, 132.79998779296875, 87.0, 132.79998779296875" strokeType="INSIDE" />
+      <Polyline fill="CHARTREUSE" layoutX="264.0" layoutY="47.0" points="237.4000244140625, 136.39999389648438, 87.0, 147.20001220703125, 87.0, 132.79998779296875, 87.0, 132.79998779296875" strokeType="INSIDE" />
       <Polyline fill="CHARTREUSE" layoutX="230.0" layoutY="222.0" points="-170.00001525878906, -25.20001220703125, -12.399978637695312, -38.600006103515625, -169.99998474121094, -42.59999084472656, -169.99998474121094, -42.59999084472656" strokeType="INSIDE" />
       <Polyline fill="CHARTREUSE" layoutX="330.0" layoutY="231.0" points="171.39996337890625, 152.40000915527344, 21.0, 168.8000030517578, 21.0, 168.8000030517578, 21.0, 153.39996337890625" strokeType="INSIDE" />
    </children>
